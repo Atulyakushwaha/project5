@@ -53,7 +53,7 @@ imd{
      display:flex;
      flex-wrap: wrap;
      gap: 5px;
-     top:25vh;
+     top:30vh;
     left: 20vw;
      width:60vw ;
      height: 40vh;
@@ -67,21 +67,31 @@ imd{
 
 .front .mainheadline:nth-child(1){
     color:white;
-    text-shadow: 2px 2px 10px white;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 50px;
     
 }
-.front :nth-child(3) {height: 10vh; margin-top:30px;}
+.front :nth-child(3) {
+            height: 10vh; 
+            margin-top:30px;
+        
+        }
 .front .mainheadline:nth-child(2){
     color:white;
-    text-shadow: 2px 2px 10px white;
+    line-height: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
    overflow: hidden;
     font-size: 15px;
 }
+.front .mainheadline:nth-child(3){
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;}
 ul {
 
 
@@ -93,16 +103,20 @@ ul {
 }
 ul li {
     display: inline;
+    height: 80px;
     margin: 20px;
     padding: 5px;
     color: white;
     font-size: medium;
     text-shadow:  2px 2px 5px seashell;
+    cursor: pointer;
    
 }
+
 @keyframes example {
     from {
-        width:0% ;}
+        width:0% ;
+    }
     to{
         width: 100%;
         border-bottom: 3px solid red;
@@ -115,4 +129,13 @@ ul li:hover {
     
 }
 
+.button_no {
+    width: 10vw;
+    height: 5vh;
+    border: 1px solid rgb(74, 123, 138);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
     
+
+}    
